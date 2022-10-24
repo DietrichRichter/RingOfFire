@@ -31,10 +31,20 @@
     }
 }
 
+.played-card {
+    right: 20px;
+    transform: scale(1) translateX(150px) translateY(-180px) rotate(-10deg);
+}
+
 .pick-card {
     transition: all 125ms ease-in-out;
     animation: pick-card-animation 1s ease-in-out;
     transform: scale(1) translateX(150px) translateY(-180px) rotate(-10deg);
+}
+
+.player-position {
+    position: absolute;
+    right: 0;
 }
 
 @keyframes pick-card-animation {
