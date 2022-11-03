@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "ringoffire-63e8d": {
+      "hosting": {
+        "ringoffire": [
+          "ringoffire-63e8d"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "ringoffire-63e8d"
+  }
+}
