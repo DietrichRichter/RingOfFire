@@ -43,18 +43,28 @@ export class GameComponent implements OnInit {
   }
 
   takeCard() {
-    if (!this.game.pickCardAnimation && this.game.stack.length > 0) {
+    if (!this.game.pickCardAnimation && this.game.stack.length > 0 && this.game.players.length > 1) {
       this.game.currentCard = this.game.stack.pop() as string;
       this.game.pickCardAnimation = true;
-      this.saveGame();
       this.game.currentPlayer++;
       this.game.currentPlayer = this.game.currentPlayer % this.game.players.length;
+      this.saveGame();
       setTimeout(() => {
         this.game.playedCards.push(this.game.currentCard);
         this.game.pickCardAnimation = false;
         this.saveGame();
       }, 1000)
+    } else {
+      this.showInfo();
     }
+  }
+
+  showInfo() {
+    document.getElementById('info-card-container')?.classList.remove('d-none');
+  }
+
+  closeInfo() {
+    document.getElementById('info-card-container')?.classList.add('d-none');
   }
 
   openDialog(): void {
