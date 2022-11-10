@@ -8,19 +8,19 @@ import { Game } from 'src/models/game';
 })
 export class GameInfoComponent implements OnInit, OnChanges {
   cardAction = [
-    { title: 'Waterfall', description: 'Everyone has to start drinking at the same time. As soon as player 1 stops drinking, player 2 may stop drinking. Player 3 may stop as soon as player 2 stops drinking, and so on.' },
-    { title: 'You', description: 'You decide who drinks' },
-    { title: 'Me', description: 'Congrats! Drink a shot!' },
-    { title: 'Category', description: 'Come up with a category (e.g. Colors). Each player must enumerate one item from the category.' },
-    { title: 'Bust a jive', description: 'Player 1 makes a dance move. Player 2 repeats the dance move and adds a second one. ' },
-    { title: 'Chicks', description: 'All girls drink.' },
-    { title: 'Heaven', description: 'Put your hands up! The last player drinks!' },
-    { title: 'Mate', description: 'Pick a mate. Your mate must always drink when you drink and the other way around.' },
-    { title: 'Thumbmaster', description: 'the player who drew the card must put their thumb on the table at a chosen time (before the next five gets picked though, or they lose the right). The last person to put their thumb on the table must drink.' },
-    { title: 'Men', description: 'All men drink.' },
-    { title: 'Quizmaster', description: 'Question master. You become the question master, and if anybody answers a question asked by you (the player who drew the card), they have to drink. This applies to ANY question.' },
-    { title: 'Never have i ever...', description: 'Say something you nnever did. Everyone who did it has to drink.' },
-    { title: 'Rule', description: 'Make a rule. Everyone needs to drink when he breaks the rule.' },
+    { title: 'Ass', description: 'Wenn du diese Karte ziehst, musst du einen Schluck aus deinem Becher trinken und die anderen Spieler im Uhrzeigersinn nacheinander ebenfalls.' },
+    { title: 'Zwei', description: 'Du darfst bestimmen, welcher Spieler etwas trinken bzw. seinen Becher leer trinken muss.' },
+    { title: 'Drei', description: 'Du musst selbst trinken.' },
+    { title: 'Vier', description: 'Alle weiblichen Mitspieler müssen trinken.' },
+    { title: 'Fünf', description: 'Du wirst zum Thumbmaster und musst deinen Daumen auf den Tisch bzw. die Spielfläche legen. Auch alle anderen Spieler müssen dies tun und wer zuletzt reagiert, muss trinken.' },
+    { title: 'Sechs', description: 'Alle männlichen Mitspieler müssen trinken.' },
+    { title: 'Sieben', description: 'Du musst dich wie in der Schule melden. Auch deine Mitspieler müssen das und wer als letztes reagiert, muss trinken.' },
+    { title: 'Acht', description: 'Du musst einen weiblichen Mitspieler aussuchen, der immer gemeinsam mit dir trinken muss. Bist du weiblich, musst du einen männlichen Mitspieler aussuchen.' },
+    { title: 'Neun', description: 'Du sagst ein alltägliches Wort und im Uhrzeigersinn muss jeder Mitspieler ein sich darauf reimendes Wort sagen. Wer zu lange braucht oder keins findet, muss trinken.' },
+    { title: 'Zehn', description: 'Falls du diese Karte ziehst, nennst du eine Marke (z.B. Automarke: BMW) und der Reihenfolge nach muss jeder Mitspieler ebenfalls eine Marke aus der gleichen Kategorie (z.B. Audi) nennen. Wer zu lange braucht oder das nicht schafft, muss trinken.' },
+    { title: 'Bube', description: 'Hast du diese Karte gezogen, darfst du dir eine neue Regel ausdenken, wann, ob, wie oder wie viel getrunken werden muss. Wer die Regel nicht befolgt – muss trinken. Diese kommt dann zu den bereits vorhandenen Ringe of Fire Regeln hinzu.' },
+    { title: 'Dame', description: 'Mit dir darf niemand reden, bis jemand anderes eine Königin gezogen hat. Wer doch mit dir redet, muss trinken.' },
+    { title: 'König', description: 'Wenn du diese Karte gezogen hast, schüttest du deinen Becherinhalt in das Glas in der Mitte. Wer den letzten im Spiel befindlichen König zieht, muss dieses Glas austrinken. Prost!' },
   ];
 
   game!: Game;

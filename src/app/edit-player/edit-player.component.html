@@ -1,0 +1,9 @@
+<h1 mat-dialog-title>Spieler bearbeiten</h1>
+
+<img class="profil-picture" *ngFor="let picture of allProfilPicture" src="assets/img/profil/{{ picture }}"
+    [mat-dialog-close]="picture">
+
+<div mat-dialog-actions>
+    <button mat-button (click)="dialogRef.close()">Schließen</button>
+    <button mat-button color="warn" [mat-dialog-close]="'DELETE'" cdkFocusInitial>Spieler löschen</button>
+</div>

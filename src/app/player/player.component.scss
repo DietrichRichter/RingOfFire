@@ -1,4 +1,5 @@
 .player {
+    overflow: hidden;
     width: 200px;
     display: flex;
     align-items: center;
@@ -9,14 +10,17 @@
     border-bottom-right-radius: 50px;
 
     img {
-        height: 70px;
-        width: 70px;
+        height: 55px;
+        width: 55px;
         object-fit: cover;
         border-radius: 100%;
     }
 
     span {
         font-size: 24px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
     }
 }
 
