@@ -19,16 +19,15 @@
 
     <app-game-info [card]="game.currentCard" class="pin-info-card"></app-game-info>
 
-    <div class="player-container">
-        <div class="group-icon">
-            <img src="assets/img/group-icon.png">
-            <span>{{ game.players.length }}</span>
-        </div>
-    </div>
-</div>
+    <app-player *ngFor="let player of game.players let i = index;" [ngStyle]="{'top.px': 100 + (i *90)}" [name]="player"
+        [playerActiv]="i == game.currentPlayer" class="player-position hide-mobile"></app-player>
 
-<app-player *ngFor="let player of game.players let i = index;" [ngStyle]="{'top.px': 100 + (i *90)}" [name]="player"
-    [playerActiv]="i == game.currentPlayer" class="player-position"></app-player>
+    <div class="scroll-container hide-desktop">
+        <app-player-mobile *ngFor="let player of game.players let i = index;" [name]="player"
+            [playerActiv]="i == game.currentPlayer"></app-player-mobile>
+    </div>
+
+</div>
 
 <div (click)="closeInfo()" class="info-card-container d-none" id="info-card-container">
     <mat-card class="info-card">

@@ -17,14 +17,34 @@
     }
 }
 
+.player-position {
+    position: absolute;
+    left: 0;
+}
+
+.scroll-container {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    app-player-mobile {
+        margin-left: 10px;
+    }
+}
+
 .card-stack {
     position: absolute;
 }
 
 .btn-add {
     position: absolute;
-    top: 30px;
+    top: 90px;
     right: 30px;
+    z-index: 3;
 }
 
 .pin-info-card {
@@ -67,25 +87,6 @@
 .info-card-content {
     font-size: 20px;
     margin-top: 15px;
-}
-
-.player-container {
-    position: absolute;
-    width: 100%;
-    top: 30px;
-    display: flex;
-    justify-content: center;
-}
-
-.group-icon {
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-
-    span {
-        font-size: 50px;
-        margin-left: 15px;
-    }
 }
 
 .card-stack {

@@ -1,0 +1,28 @@
+.player {
+    min-width: 50px;
+    max-width: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(218, 218, 227, 0.8);
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+
+    img {
+        height: 50px;
+        width: 50px;
+        object-fit: cover;
+        border-radius: 100%;
+        margin-top: 10px;
+    }
+
+    span {
+        font-size: 24px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+}
+
+.player-activ {
+    background-color: blue !important;
+}
