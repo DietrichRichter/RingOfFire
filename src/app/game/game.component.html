@@ -8,6 +8,8 @@
         <img src="assets/img/game-over.jpg">
     </div>
 
+    <app-replay-game class="replay-container" *ngIf="gameOver"></app-replay-game>
+
     <div *ngIf="!gameOver" class="card-stack">
         <img [ngStyle]="{'right.px': i * 5 + 30}" *ngFor="let c of [0, 1, 2, 3,]; let i = index;"
             src="assets/img/cards/card_cover.png">

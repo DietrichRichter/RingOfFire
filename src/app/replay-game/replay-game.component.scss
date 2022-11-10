@@ -1,0 +1,14 @@
+.button {
+    position: absolute;
+    bottom: 100px;
+    width: 100px;
+    height: 50px;
+    border: none;
+    background-color: red;
+    border-radius: 5px;
+    cursor: pointer;
+
+    &:hover {
+        filter: brightness(1.15);
+    }
+}

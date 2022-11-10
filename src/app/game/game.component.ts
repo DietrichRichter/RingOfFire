@@ -60,7 +60,7 @@ export class GameComponent implements OnInit {
         this.game.pickCardAnimation = false;
         this.saveGame();
       }, 1000)
-    } else {
+    } else if (this.game.players.length <= 1) {
       this.showInfo();
     }
   }

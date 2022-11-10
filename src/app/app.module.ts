@@ -26,6 +26,7 @@ import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 import { PlayerMobileComponent } from './player-mobile/player-mobile.component';
 import { EditPlayerComponent } from './edit-player/edit-player.component';
 import { NoPlayerInfoComponent } from './no-player-info/no-player-info.component';
+import { ReplayGameComponent } from './replay-game/replay-game.component';
 
 
 @NgModule({
@@ -38,7 +39,8 @@ import { NoPlayerInfoComponent } from './no-player-info/no-player-info.component
     GameInfoComponent,
     PlayerMobileComponent,
     EditPlayerComponent,
-    NoPlayerInfoComponent
+    NoPlayerInfoComponent,
+    ReplayGameComponent
   ],
   imports: [
     BrowserModule,
