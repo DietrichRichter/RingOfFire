@@ -1,3 +1,9 @@
+.profil-images-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
 .profil-picture {
     height: 100px;
     height: 100px;
@@ -8,5 +14,34 @@
 
     &:hover {
         filter: brightness(1.15);
+    }
+}
+
+@media (max-width: 800px) {
+    .profil-picture {
+        height: 80px;
+        width: 80px;
+    }
+}
+
+@media (max-width: 400px) {
+    h1 {
+        font-size: 20px;
+    }
+
+    .buttons {
+        display: flex;
+        justify-content: center;
+    }
+
+    .profil-picture {
+        height: 50px;
+        width: 50px;
+    }
+}
+
+@media (max-width: 347px) {
+    .buttons {
+        flex-direction: column-reverse;
     }
 }
